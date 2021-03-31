@@ -6,7 +6,7 @@ class VSJStateless extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
+      theme: ThemeData.dark().copyWith(
         primaryColor: Colors.teal,
         accentColor: Colors.purple,
         scaffoldBackgroundColor: Color(0xFF000002),
