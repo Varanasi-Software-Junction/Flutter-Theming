@@ -17,10 +17,14 @@ class _VSJStatefulState extends State<VSJStateful> {
         child: Text('The Body'),
       ),
       floatingActionButton: Theme(
-        data: ThemeData.light(),
+        data: ThemeData(
+          accentColor: Colors.red,
+
+        ),
         child: FloatingActionButton(
           child: Icon(Icons.add),
         ),
+
       ),
     );
   }
