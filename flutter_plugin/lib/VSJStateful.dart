@@ -36,11 +36,11 @@ class _VSJStatefulState extends State<VSJStateful> {
             Row(
               children: [
                 Expanded(
-                  child: Text("1,1"),
+                  child: Text("3,1"),
                 ),
                 Expanded(
-                  child: Text("1,2"),
-                )
+                  child: Text("3,2"),
+                ),
               ],
             ),
           ],
