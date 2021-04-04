@@ -16,32 +16,62 @@ class _VSJStatefulState extends State<VSJStateful> {
       body: Container(
         child: Column(
           children: [
-            Row(
-              children: [
-                Expanded(
-                  child: Text("1,1"),
-                ),
-                Expanded(
-                  child: Text("1,2"),
-                )
-              ],
+            Expanded(
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      margin: EdgeInsets.all(15.0),
+                      decoration: BoxDecoration(
+                        color: Color(0xFF1D1E33),
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      margin: EdgeInsets.all(15.0),
+                      decoration: BoxDecoration(
+                        color: Color(0xFF1D1E33),
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
-            Row(
-              children: [
-                Expanded(
-                  child: Text("2,1"),
+            Expanded(
+              child: Container(
+                margin: EdgeInsets.all(15.0),
+                decoration: BoxDecoration(
+                  color: Color(0xFF1D1E33),
+                  borderRadius: BorderRadius.circular(10.0),
                 ),
-              ],
+              ),
             ),
-            Row(
-              children: [
-                Expanded(
-                  child: Text("3,1"),
-                ),
-                Expanded(
-                  child: Text("3,2"),
-                ),
-              ],
+            Expanded(
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      margin: EdgeInsets.all(15.0),
+                      decoration: BoxDecoration(
+                        color: Color(0xFF1D1E33),
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      margin: EdgeInsets.all(15.0),
+                      decoration: BoxDecoration(
+                        color: Color(0xFF1D1E33),
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ],
         ),
