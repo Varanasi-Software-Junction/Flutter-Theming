@@ -19,17 +19,17 @@ class _VSJStatefulState extends State<VSJStateful> {
             Expanded(
               child: Row(
                 children: [
-                  VSJBlock(),
-                  VSJBlock(),
+                  new VSJBlock(Color(0xFF1D1E33)),
+                  new VSJBlock(Colors.teal),
                 ],
               ),
             ),
-            VSJBlock(),
+            new VSJBlock(Color(0xFF1D1E33)),
             Expanded(
               child: Row(
                 children: [
-                  VSJBlock(),
-                  VSJBlock(),
+                  new VSJBlock(Color(0xFF1D1E33)),
+                  new VSJBlock(Color(0xFF1D1E33)),
                 ],
               ),
             ),
@@ -41,9 +41,10 @@ class _VSJStatefulState extends State<VSJStateful> {
 }
 
 class VSJBlock extends StatelessWidget {
-  const VSJBlock({
-    Key key,
-  }) : super(key: key);
+  Color backcolor;
+  VSJBlock(Color backcolor) {
+    this.backcolor = backcolor;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +52,7 @@ class VSJBlock extends StatelessWidget {
       child: Container(
         margin: EdgeInsets.all(15.0),
         decoration: BoxDecoration(
-          color: Color(0xFF1D1E33),
+          color: backcolor,
           borderRadius: BorderRadius.circular(10.0),
         ),
       ),
