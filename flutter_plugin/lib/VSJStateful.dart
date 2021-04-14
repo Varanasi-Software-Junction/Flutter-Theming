@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+const bottomheight = 80.0;
+const backgroundcolor=Color(0xFF1D1E33);
+const bottomcolor=Color(0xFFEB1555);
 class VSJStateful extends StatefulWidget {
   @override
   _VSJStatefulState createState() => _VSJStatefulState();
@@ -19,19 +22,25 @@ class _VSJStatefulState extends State<VSJStateful> {
             Expanded(
               child: Row(
                 children: [
-                  new VSJBlock(Color(0xFF1D1E33)),
-                  new VSJBlock(Colors.teal),
+                  new VSJBlock(backgroundcolor),
+                  new VSJBlock(backgroundcolor),
                 ],
               ),
             ),
-            new VSJBlock(Color(0xFF1D1E33)),
+            new VSJBlock(backgroundcolor),
             Expanded(
               child: Row(
                 children: [
-                  new VSJBlock(Color(0xFF1D1E33)),
-                  new VSJBlock(Color(0xFF1D1E33)),
+                  new VSJBlock(backgroundcolor),
+                  new VSJBlock(backgroundcolor),
                 ],
               ),
+            ),
+            Container(
+              color: bottomcolor,
+              margin: EdgeInsets.only(top: 10),
+              width: double.infinity,
+              height: bottomheight,
             ),
           ],
         ),
@@ -41,10 +50,8 @@ class _VSJStatefulState extends State<VSJStateful> {
 }
 
 class VSJBlock extends StatelessWidget {
-  Color backcolor;
-  VSJBlock(Color backcolor) {
-    this.backcolor = backcolor;
-  }
+  final Color backcolor;
+  VSJBlock([@required this.backcolor]);
 
   @override
   Widget build(BuildContext context) {
